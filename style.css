@@ -2,8 +2,8 @@
 
 :root{
 --cor-de-fundo: #6A9AB0;
---cor-primaria: #001F3F;
---cor-secundaria: #EAD8B1;
+--cor-primaria: #EAD8B1;
+--cor-secundaria: #001F3F;
 --fonte:"Overpass", sans-serif;
 }
 *{
@@ -14,4 +14,37 @@ body{
 background-color: var(--cor-de-fundo);
 color: var(--cor-primaria);
 font-family: var(--fonte);
+height: 100vh;
+margin: 0;
+}
+
+header{
+    background-color:var(--cor-primaria);
+    text-align: center;
+}
+
+h1{
+  font-size: 2rem;
+  color: var(--cor-de-fundo);
+  font-weight: 700; /*PESO DA FONTE*/
+}
+
+
+nav{
+    display: flex; /* ORGANIZA AS TAGS 'FILHAS' EM UM FLEX-BOX */
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: transform 1s;
 }
