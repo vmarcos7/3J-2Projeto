@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
-    --cor-de-fundo: #000000;
-    --cor-primaria: #237e17;
-    --cor-secundaria: #21d311;
+    --cor-de-fundo: #50B498;
+    --cor-primaria: #DEF9C4;
+    --cor-secundaria: #468585;
     --fonte: "Quantico", sans-serif;
 }
 
@@ -27,8 +27,9 @@ header{
 }
 
 footer{
-    background-color: var(--cor-primaria);
-    color: white;
+ text-align: center;
+ background-color: var(--cor-secundaria);
+ color: white;
 }
 
 h1{
@@ -57,6 +58,17 @@ nav a:hover{
     color: var(--cor-de-fundo);
     font-size: 1.2rem;
 }
+span{
+color:var(--cor-secundaria);
+font-weight: bold;
+}
 .graficos-container{
     color: wheat;
+    margin: 5rem;
+}
+.graficos-texto{
+font-size:1.3rem;
+border: var(--cor-secundaria) solid 2px;
+padding: 2rem;
+
 }
