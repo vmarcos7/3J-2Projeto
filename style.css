@@ -1,50 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
---cor-de-fundo: #6A9AB0;
---cor-primaria: #EAD8B1;
---cor-secundaria: #001F3F;
---fonte:"Overpass", sans-serif;
+    --cor-de-fundo: #000000;
+    --cor-primaria: #237e17;
+    --cor-secundaria: #21d311;
+    --fonte: "Quantico", sans-serif;
 }
+
 *{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body{
-background-color: var(--cor-de-fundo);
-color: var(--cor-primaria);
-font-family: var(--fonte);
-height: 100vh;
-margin: 0;
+    font-family: var(--fonte);
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-de-fundo);
+    height: 100vh;
+    margin: 0;
 }
 
 header{
-    background-color:var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    color: white;
     text-align: center;
 }
 
-h1{
-  font-size: 2rem;
-  color: var(--cor-de-fundo);
-  font-weight: 700; /*PESO DA FONTE*/
+footer{
+    background-color: var(--cor-primaria);
+    color: white;
 }
 
+h1{
+    font-weight: 700;
+}
 
 nav{
-    display: flex; /* ORGANIZA AS TAGS 'FILHAS' EM UM FLEX-BOX */
+    display: flex;
     justify-content: center;
     font-weight: 400;
 }
 
 nav a{
-    text-decoration: none;
+    text-decoration:none;
+    background-color: var(--cor-secundaria); 
     color: var(--cor-de-fundo);
-    margin: 0 2rem 1rem 0;
+    margin: 0 0.5rem 1rem 0;
     font-size: 1.2rem;
 }
 
 nav a:hover{
-    text-decoration: underline;
-    transform: scale(1.2);
-    transition: transform 1s;
+    text-decoration:none; 
+    background-color: var(--cor-primaria);
+    transform: scale(0.8);
+    transition: transform 0.5s;
+    color: var(--cor-de-fundo);
+    font-size: 1.2rem;
+}
+.graficos-container{
+    color: wheat;
 }
