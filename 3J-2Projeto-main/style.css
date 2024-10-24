@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --cor-de-fundo: #50B498;
+    --cor-primaria: #DEF9C4;
+    --cor-secundaria: #468585;
+    --fonte: "Quantico", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fonte);
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-de-fundo);
+    height: 100vh;
+    margin: 0;
+}
+
+header{
+    background-color: var(--cor-secundaria);
+    color: white;
+    text-align: center;
+}
+
+footer{
+ text-align: center;
+ background-color: var(--cor-secundaria);
+ color: white;
+}
+
+h1{
+    font-weight: 700;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a{
+    text-decoration:none;
+    background-color: var(--cor-secundaria); 
+    color: var(--cor-de-fundo);
+    margin: 0 0.5rem 1rem 0;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    text-decoration:none; 
+    background-color: var(--cor-primaria);
+    transform: scale(0.8);
+    transition: transform 0.5s;
+    color: var(--cor-de-fundo);
+    font-size: 1.2rem;
+}
+span{
+color:var(--cor-secundaria);
+font-weight: bold;
+}
+.graficos-container{
+    color: wheat;
+    margin: 5rem;
+}
+.graficos-texto{
+font-size:1.3rem;
+border: var(--cor-secundaria) solid 2px;
+padding: 2rem;
+
+}
